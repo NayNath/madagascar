@@ -76,3 +76,22 @@ div.container-imagens{
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 768px) {
+    .container-img {
+        height: 200px;
+    }
+    .container-img.meio{
+        height: 150px;
+    }
+    .container-imagens.cima{
+        margin-top: 40px;
+    }
+    #carrossel-home-imagens{
+        height: 100vh;
+        overflow: hidden; 
+    }
+    .container-imagens.baixo{
+        margin-bottom: 10px;
+    }
+}
