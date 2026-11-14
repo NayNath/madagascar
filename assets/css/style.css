@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'gameness';
+    src: url('../gameness/Gameness-Light.otf') format('truetype');
+}
+*{
+    margin: 0; 
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'gameness';
+}
+body{
+    background-color: #310a26;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+main{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    
+    width: 100%;
+}
+footer{
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+}
+
+
+
+#carrossel-home-imagens{
+    height: 100vh;
+    overflow: hidden; /*corta o que ultrapassa a largura da tela*/
+    background: linear-gradient(110deg,         
+    #310a26 50%,
+    #f8db7e 50%,          
+    #f8db7e 60%,          
+    #ec6349 60%,          
+    #ec6349 75%,          
+    #ce2340 75%,     
+    #ce2340 100%     
+    ); 
+}
+div.container-imagens{
+    display: flex;
+    animation: loopInfinito 25s linear infinite;
+}
+.container-img {
+    height: 300px;
+    margin: 10px;
+}
+.container-imagens.cima{
+    margin-top: 50px;
+}
+.container-img.meio{
+    height: 200px;
+}
+.container-imagens.baixo{
+    margin-bottom: 50px;
+}
+.container-img img{
+    margin: 10px;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+@keyframes loopInfinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
