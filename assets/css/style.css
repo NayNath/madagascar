@@ -2,6 +2,7 @@
     font-family: 'gameness';
     src: url('../gameness/Gameness-Light.otf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0; 
     padding: 0;
@@ -23,10 +24,13 @@ header{
     align-items: center;
     /*position: absolute;*/
     padding: 10px 20px;
-    background-color: #00000040;
+    background-color: #0000007e;
 }
 .container-logo, .container-logo img{
     height: 80px;
+}
+.menu{
+    display: flex;
 }
 .menu ul{
     display: flex;
@@ -34,12 +38,13 @@ header{
 }
 .menu li, .menu a{
     margin: 0 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: #fefefe;
+    transition: all 0.3s ease-in-out;
+    font-family: "Montserrat", sans-serif;
 }
 .menu a:hover{
-    text-decoration: underline;
     color:#f8db7e;
 }
 .botao-mapa{
@@ -53,6 +58,44 @@ header{
     color: #fefefe;
     font-size: 1.2rem;
 }
+.menu-toggle{
+    display: none;
+}
+.material-symbols-outlined{
+    color: #fefefe;
+    background-color: #0000007e;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+}
+@media (max-width: 768px) {
+    .menu{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        top: 100px;
+        background-color: #00000040;
+        left: 0;
+        display: none;
+    }
+    .menu.ativo{
+        display: block;
+    }
+    .menu ul{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .menu li, .menu a{
+        margin: 10px;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+}
+
 
 main{
     grid-column: 1/-1;
@@ -76,6 +119,10 @@ main{
 div.container-imagens{
     display: flex;
     animation: loopInfinito 25s linear infinite;
+}
+div.container-imagens.meio{
+    display: flex;
+    animation: loopcontrario 30s linear infinite;
 }
 .container-img {
     height: 300px;
@@ -102,6 +149,14 @@ div.container-imagens{
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+@keyframes loopcontrario {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(10%);
     }
 }
 
