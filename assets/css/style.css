@@ -75,7 +75,7 @@ header{
     border-radius: 5px;
     border: 1px solid #fefefe;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu{
         position: absolute;
         flex-direction: column;
@@ -112,7 +112,6 @@ main{
     
     width: 100%;
 }
-
 /******************banner inicio******************/
 #inicio{
     background-image: url(../img/banner.png);
@@ -140,7 +139,6 @@ main{
     letter-spacing: 0.1em;
     margin: 20px 0;
 }
-
 /******************carrossel******************/
 #carrossel-home-imagens{
     height: 100vh;
@@ -198,8 +196,64 @@ div.container-imagens.meio{
         transform: translateX(10%);
     }
 }
-
-@media (max-width: 768px) {
+/******************venha conhecer******************/
+#venha-conhecer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px 50px;
+}
+.container-conhecer-esquerda iframe{
+    border-top: solid #ce2340 40px;
+    border-left: solid #ce2340 40px;
+    border-bottom: solid #fa9f19 40px;
+    border-right: solid #fa9f19 40px;
+}
+.container-conhecer-direita{
+    color: #fefefe;
+    width: 50%;
+    margin-left: 20px;
+}
+.container-conhecer-direita h2{
+    font-size: 6rem;
+}
+.container-conhecer-direita p{
+    font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+     #venha-conhecer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 150px 20px;
+    }
+    .container-conhecer-esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .container-conhecer-esquerda iframe{
+        width: 90%;
+        border-top: solid #ce2340 30px;
+        border-left: solid #ce2340 30px;
+        border-bottom: solid #fa9f19 30px;
+        border-right: solid #fa9f19 30px;
+    }
+    .container-conhecer-direita{
+        color: #fefefe;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .container-conhecer-direita h2{
+        font-size: 4rem;
+    }
+    .container-conhecer-direita p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px) {
     /******************banner inicio******************/
     .container-banner h1{
         font-size: 5.5rem;
@@ -207,8 +261,6 @@ div.container-imagens.meio{
     .container-banner h3{
         font-size: 1.5rem;
     }
-    /******************banner inicio******************/
-
     /******************carrossel******************/
     #carrossel-home-imagens{
         height: 100vh;
@@ -225,6 +277,38 @@ div.container-imagens.meio{
     }
     .container-imagens.baixo{
         margin-bottom: 10px;
+    }
+    /******************banner inicio******************/
+    #venha-conhecer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 150px 20px;
+    }
+    .container-conhecer-esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .container-conhecer-esquerda iframe{
+        width: 90%;
+        border-top: solid #ce2340 30px;
+        border-left: solid #ce2340 30px;
+        border-bottom: solid #fa9f19 30px;
+        border-right: solid #fa9f19 30px;
+    }
+    .container-conhecer-direita{
+        color: #fefefe;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .container-conhecer-direita h2{
+        font-size: 4rem;
+    }
+    .container-conhecer-direita p{
+        font-size: 1.1rem;
     }
 }
 footer{
