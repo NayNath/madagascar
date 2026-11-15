@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'gameness';
 }
 body{
-    background-color: #310a26;
+    background-color: #110012;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -22,9 +22,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*position: absolute;*/
-    padding: 10px 20px;
-    background-color: #0000007e;
+    padding: 10px 30px;
+    background-color: #0000007a;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .container-logo, .container-logo img{
     height: 80px;
@@ -34,6 +36,7 @@ header{
 }
 .menu ul{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 .menu li, .menu a{
@@ -47,11 +50,15 @@ header{
 .menu a:hover{
     color:#f8db7e;
 }
+.botao-mapa:hover{
+    border: 1px solid #f8db7e;
+}
 .botao-mapa{
     background-color: #0000007e;
     padding: 5px 20px;
     border-radius: 5px;
     border: 1px solid #fefefe;
+    margin-left: 20px;
 }
 .botao-mapa a{
     text-decoration: none;
@@ -75,9 +82,10 @@ header{
         align-items: center;
         width: 100%;
         top: 100px;
-        background-color: #00000040;
+        background-color: #0000007e;
         left: 0;
         display: none;
+        box-shadow: 5px 5px 10px #0000007a;
     }
     .menu.ativo{
         display: block;
@@ -91,23 +99,54 @@ header{
     .menu li, .menu a{
         margin: 10px;
     }
+    .botao-mapa{
+        margin: 10px 0px;
+    }
     .menu-toggle{
         display: flex;
     }
 }
-
-
 main{
     grid-column: 1/-1;
     grid-row: 2/3;
     
     width: 100%;
 }
+
+/******************banner inicio******************/
+#inicio{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container-banner{
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow:10px 10px 10px #1100129c;
+}
+.container-banner h1{
+    letter-spacing: 0.1em;
+    font-size: 10rem;
+}
+.container-banner h3{
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    margin: 20px 0;
+}
+
+/******************carrossel******************/
 #carrossel-home-imagens{
     height: 100vh;
     overflow: hidden; /*corta o que ultrapassa a largura da tela*/
     background: linear-gradient(110deg,         
-    #310a26 50%,
+    #110012 50%,
     #f8db7e 50%,          
     #f8db7e 60%,          
     #ec6349 60%,          
@@ -161,6 +200,16 @@ div.container-imagens.meio{
 }
 
 @media (max-width: 768px) {
+    /******************banner inicio******************/
+    .container-banner h1{
+        font-size: 5.5rem;
+    }
+    .container-banner h3{
+        font-size: 1.5rem;
+    }
+    /******************banner inicio******************/
+
+    /******************carrossel******************/
     #carrossel-home-imagens{
         height: 100vh;
         overflow: hidden; 
