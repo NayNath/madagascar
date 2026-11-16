@@ -110,7 +110,6 @@ header{
 main{
     grid-column: 1/-1;
     grid-row: 2/3;
-    
     width: 100%;
 }
 /******************banner inicio******************/
@@ -231,8 +230,7 @@ div.container-imagens.meio{
     #f8db7e 0%,          
     #f8db7e 70%,          
     #ec6349 70%,          
-    #ec6349 100%       
-    ); 
+    #ec6349 100%       ); 
 }
 .container-descobrir-cards{
     width: 400px;
@@ -252,10 +250,11 @@ div.container-imagens.meio{
     height: 100%;
 }
 .container-card-img img{
-    border-radius: 15px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(0.7);
 }
 .container-card-texto{
     position: absolute;
@@ -269,7 +268,6 @@ div.container-imagens.meio{
     font-size: 3rem;
     text-align: center;
 }
-
 .container-card-texto button{
     color: #fefefe;
     background-color: #0000007e;
@@ -277,7 +275,6 @@ div.container-imagens.meio{
     border-radius: 5px;
     border: 1px solid #fefefe;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
      #venha-conhecer{
@@ -337,7 +334,7 @@ div.container-imagens.meio{
     .container-imagens.baixo{
         margin-bottom: 10px;
     }
-    /******************banner inicio******************/
+    /******************venha-conhecer******************/
     #venha-conhecer{
         flex-direction: column;
         align-items: center;
@@ -368,6 +365,24 @@ div.container-imagens.meio{
     }
     .container-conhecer-direita p{
         font-size: 1.1rem;
+    }
+    /******************venha descobrir******************/
+    #venha-descobrir{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 150px 0px;
+        padding: 50px 0px;
+        background: linear-gradient(180deg,         
+        #f8db7e 0%,          
+        #f8db7e 50%,          
+        #ec6349 50%,          
+        #ec6349 100%       ); 
+    }
+    .container-descobrir-cards{
+        width: 350px;
+        height: 300px;
     }
 }
 footer{
