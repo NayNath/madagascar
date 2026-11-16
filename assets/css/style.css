@@ -225,7 +225,14 @@ div.container-imagens.meio{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 100px 20px;
+    margin: 150px 0px;
+    padding: 50px 0px;
+    background: linear-gradient(180deg,         
+    #f8db7e 0%,          
+    #f8db7e 70%,          
+    #ec6349 70%,          
+    #ec6349 100%       
+    ); 
 }
 .container-descobrir-cards{
     width: 400px;
