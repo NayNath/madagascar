@@ -9,6 +9,7 @@
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'gameness';
+    letter-spacing: 0.1em;
 }
 body{
     background-color: #110012;
@@ -131,12 +132,10 @@ main{
     text-shadow:10px 10px 10px #1100129c;
 }
 .container-banner h1{
-    letter-spacing: 0.1em;
     font-size: 10rem;
 }
 .container-banner h3{
     font-size: 2rem;
-    letter-spacing: 0.1em;
     margin: 20px 0;
 }
 /******************carrossel******************/
@@ -220,6 +219,59 @@ div.container-imagens.meio{
 .container-conhecer-direita p{
     font-size: 1.1rem;
 }
+/******************venha descobrir******************/
+#venha-descobrir{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 20px;
+}
+.container-descobrir-cards{
+    width: 400px;
+    height: 350px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fefefe;
+    transition: 500ms;
+}
+.container-descobrir-cards:hover{
+    transform: scale(1.1);
+}
+.container-card-img{
+    width: 100%;
+    height: 100%;
+}
+.container-card-img img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-card-texto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-card-texto h3{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container-card-texto button{
+    color: #fefefe;
+    background-color: #0000007e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
      #venha-conhecer{
         flex-direction: column;
