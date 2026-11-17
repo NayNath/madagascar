@@ -60,8 +60,6 @@ header{
     border-radius: 5px;
     border: 1px solid #fefefe;
     margin-left: 20px;
-}
-.botao-mapa a{
     text-decoration: none;
     color: #fefefe;
     font-size: 1.2rem;
@@ -280,7 +278,6 @@ div.container-imagens.meio{
     font-weight: bold;
     background-color: #fefefe;
 }
-
 /******************lêmures******************/
 .lemure-sentado{
     width: 195px;
@@ -437,5 +434,79 @@ div.container-imagens.meio{
 footer{
     grid-column: 1/-1;
     grid-row: 3/-1;
+    display: flex;
+    flex-direction: column;
+}
+.container-footer-cima{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    background-color: #0000007a;
+}
+.container-footer-cima-esquerda img{
+    width: 250px;
+}
+.container-footer-cima-meio{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.container-footer-listas{
+    margin: 0px 50px;
+    width: 30%;
+}
+.container-footer-listas h4, .container-footer-cima-direita h4{
+    color: #fefefe;
+    font-size: 2rem;
+}
+.container-footer-listas li{
+    list-style: none;
+}
+.container-footer-listas a{
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+}
+.container-footer-listas a:hover{
+    color:#fa9f19;
+}
+.container-footer-baixo{
+    color: #fefefe;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+.container-footer-cima-direita{
+    display: flex;
+    flex-direction: column;
+}
+.social-icons{
+    width: 40px;
+    display: flex;
+}
+.social-icons img{
+    width: 35px;
+    margin: 10px 4px
 }
 
+@media screen and (max-width: 768px) {
+    .container-footer-cima{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-footer-cima-esquerda img{
+        width: 200px;
+    }
+    .container-footer-cima-meio{
+        margin: 50px 0px;
+    }
+    .container-footer-listas{
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
