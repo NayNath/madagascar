@@ -285,16 +285,20 @@ div.container-imagens.meio{
     bottom: -10px;
     margin-left: 10px;
 }
-.lemure-sentado img{
-    width: 100%;
-}
 .lemure-quatro{
     width: 195px;
     position: absolute;
     right: 20px;
     bottom: -1.5%; 
 }
-.lemure-quatro img{
+.lemure-quatro-footer{
+    width: 195px;
+    position: absolute;
+    right: 20px;
+}
+.lemure-quatro img,
+.lemure-quatro-footer img,
+.lemure-sentado img{
     width: 100%;
 }
 
@@ -412,8 +416,8 @@ div.container-imagens.meio{
         #ec6349 100%       ); 
     }
     .container-descobrir-cards{
-        width: 350px;
-        height: 300px;
+        width: 300px;
+        height: 250px;
     }
 
 
@@ -428,6 +432,9 @@ div.container-imagens.meio{
     }
     .lemure-quatro{
         width: 150px;
+    }
+    .lemure-quatro-footer img{
+        width: 0px;
     }
 
 }
