@@ -521,18 +521,26 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background:
-    linear-gradient(160deg, #ce2340 25%, transparent 25%) 0 0,
-    linear-gradient(340deg, #f8db7e 25%, transparent 25%)0,
-    linear-gradient(12deg, #ce2340 25%, transparent 25%) 0 0,
-    linear-gradient(20deg, #ec6349 25%, transparent 25%) 0 0,
-    linear-gradient(100deg, #f8db7e 25%, transparent 20%) -5px 0,
-    linear-gradient(-50deg, #ce2340 25%, transparent 25%) 0 0,
-    linear-gradient(-130deg, #ec6349 25%, transparent 25%),
-    linear-gradient(190deg, #f8db7e 25%, transparent 20%) 0 0;
+    text-align: center;
+    background-image: url('../img/bannerCultura.png');
+
+    /*background:
+        linear-gradient(160deg, #ce2340 25%, transparent 25%) 0 0,
+        linear-gradient(340deg, #f8db7e 25%, transparent 25%)0,
+        linear-gradient(12deg, #ce2340 25%, transparent 25%) 0 0,
+        linear-gradient(20deg, #ec6349 25%, transparent 25%) 0 0,
+        linear-gradient(100deg, #f8db7e 25%, transparent 20%) 0 0,
+        linear-gradient(-50deg, #ce2340 25%, transparent 25%) 0 0,
+        linear-gradient(-130deg, #ec6349 25%, transparent 25%),
+        linear-gradient(190deg, #f8db7e 25%, transparent 20%) 0 0;*/
 }
 #banner-culturaGastronomia h1{
     font-size: 10rem;
     color: #fefefe;
+    text-shadow: 5px 3px 10px #00000080;
+}
+@media screen and (max-width: 768px){
+    #banner-culturaGastronomia h1{
+        font-size: 5.5rem;
+    }
 }
