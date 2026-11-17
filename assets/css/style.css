@@ -539,8 +539,29 @@ footer{
     color: #fefefe;
     text-shadow: 5px 3px 10px #00000080;
 }
+#cultura-introducao{
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 150px 150px;
+}
+#cultura-introducao h2{
+    font-size: 6rem;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 10px #3a3a3a80;
+}
+#cultura-introducao p{
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 768px){
     #banner-culturaGastronomia h1{
         font-size: 5.5rem;
+    }
+    #cultura-introducao{
+        margin: 150px 40px;
     }
 }
