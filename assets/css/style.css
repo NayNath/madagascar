@@ -523,7 +523,8 @@ footer{
     justify-content: center;
     text-align: center;
     background-image: url('../img/bannerCultura.png');
-
+    background-repeat: repeat;
+    background-size: cover;
     /*background:
         linear-gradient(160deg, #ce2340 25%, transparent 25%) 0 0,
         linear-gradient(340deg, #f8db7e 25%, transparent 25%)0,
@@ -556,7 +557,44 @@ footer{
 #cultura-introducao p{
     font-size: 1.3rem;
 }
+/*tela cultura e gastronomia*/
+#cultura-fotos{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background:
+    /* Faixas subindo da esquerda para a direita (lado direito - amarelo por cima) */
+    linear-gradient(20deg, #f8db7e 25%, transparent 25%) 0 100%,
+    linear-gradient(20deg, #ec6349 32%, transparent 32%) 0 100%,
+    linear-gradient(20deg, #ce2340 40%, transparent 40%) 0 100%,
 
+    /* Faixas descendo da esquerda para a direita (lado esquerdo - vermelho por cima) */
+    linear-gradient(-20deg, #ce2340 25%, transparent 25%) 0 100%,
+    linear-gradient(-20deg, #ec6349 32%, transparent 32%) 0 100%,
+    linear-gradient(-20deg, #f8db7e 40%, transparent 40%) 0 100%;
+
+}
+.container-fotos-cultura{
+    display: flex;
+    flex-direction: column;
+}
+.foto-cultura{
+    width: 200px;
+    height: 380px;
+    margin: 10px;
+}
+.foto-cultura img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px){
+    
+}
 @media screen and (max-width: 768px){
     #banner-culturaGastronomia h1{
         font-size: 5.5rem;
@@ -564,4 +602,6 @@ footer{
     #cultura-introducao{
         margin: 150px 40px;
     }
+    
+    
 }
