@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
+    <script src="assets/script/culturaGastronomia.js"></script>
     <!--HEADER-->
     <header>
         <div class="container-logo">
@@ -44,64 +45,76 @@
                 Apesar de um Índice de Desenvolvimento Humano classificado em 173º em 2021, a sociedade malgache moderna permanece profundamente enraizada em suas raízes. As tradições ancestrais coexistem harmoniosamente com os desafios do desenvolvimento, especialmente para os jovens empreendedores. Isso cria uma paisagem cultural única e fascinante.
             </p>
         </section>
-
-
-        <section id="cultura-fotos">
-            <div class="foto-cultura">
-                <img src="https://www.worldatlas.com/r/w1200/upload/26/92/6f/shutterstock-175547507.jpg" alt="Duas mulheres madagais carregando grandes cestos coloridos sobre a cabeça">
-                <img src="https://tripjive.com/wp-content/uploads/2025/01/Trinidadian-culture-activities-1.jpg" alt="Dançarinos vestidos com trajes tradicionais coloridos durante um festival vibrante em Madagascar">
-                <img src="https://travel.com/wp-content/uploads/2025/09/Traditional-Malagasy-cultural-celebration-in-Farafangana-with-dancers-in-colorful-attire-1024x585.webp" alt="Grupo de dançarinos e músicos vestidos com trajes tradicionais coloridos">
-                <img src="https://i.pinimg.com/originals/94/cc/25/94cc254c3e11648b4de8716683f0575d.jpg" alt="Mulher de Madagascar vestindo um tecido estampado e pinturas no rosto">
-                <img src="https://ts1.mm.bing.net/th?id=OIP.jBYeGO1-cJ6cxG6NnpxD1QHaD1&pid=15.1" alt="Fotografia de integrantes da Hira Gasy troupe">
-                <img src="https://www.worldatlas.com/r/w1200/upload/1a/57/e4/shutterstock-727682785.jpg" alt="Fotografia mostra uma vendedora em um mercado de Madagascar">
-                <img src="https://visit-madagascar.com/wp-content/uploads/2025/06/cultural-experiences-you-shouldnt-miss-when-visiting-madagascar-768x439.jpg" alt="Fotografia mostra dois artesãos trabalhando em um telhado colorido">
-                <img src="https://th.bing.com/th/id/R.a8efec3fa9a3dcbedd89f9ceca9221c0?rik=Ax2nwf8dL3xJ%2fw&riu=http%3a%2f%2fvisit-madagascar.com%2fwp-content%2fuploads%2f2025%2f06%2fdance-in-madagascar-exploring-the-evolution-from-tribal-rituals-to-modern-expressions-2.jpg&ehk=g8N5Y6bXkk8ArTF2TyFk5WpEjyO2WKz3ETTaAJnoAKs%3d&risl=&pid=ImgRaw&r=0" alt="Dançarinos tradicionais da Madagascar ">
-                <img src="https://viajesviatamundo.com/images/imagenes_viajes/AFRICA/viajes_madagascar/viajes_madagascar_antsirabe_1.jpg" alt="Artista de Madagascar pintando uma cena ao entardecer com árvores de baobá">
-                <img src="https://i.pinimg.com/736x/3a/e8/f0/3ae8f0f526b6ee21ac75a301960f9830.jpg" alt="Mulher Betsileo vestindo um manto tradicional vermelho">
-                <img src="https://i.pinimg.com/originals/9d/c0/92/9dc0922a571815c50c7ef1e5da71c3d8.jpg" alt="Príncipe da Valiha segurando um instrumento tradicional madagais de madeira">
-                <img src="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2024/09/1_6434324-GettyImages-931183644_-_Barbados-1024x576.jpg" alt="Grupo de pessoas caminhando por um caminho de terra">
+        <!--<section id="cultura-fotos">
+            <div class="carrossel-foto-cultura">
+                <div class="foto-cultura">
+                    <img src="https://www.worldatlas.com/r/w1200/upload/26/92/6f/shutterstock-175547507.jpg" alt="Duas mulheres madagais carregando grandes cestos coloridos sobre a cabeça">
+                    <img src="https://tripjive.com/wp-content/uploads/2025/01/Trinidadian-culture-activities-1.jpg" alt="Dançarinos vestidos com trajes tradicionais coloridos durante um festival vibrante em Madagascar">
+                    <img src="https://travel.com/wp-content/uploads/2025/09/Traditional-Malagasy-cultural-celebration-in-Farafangana-with-dancers-in-colorful-attire-1024x585.webp" alt="Grupo de dançarinos e músicos vestidos com trajes tradicionais coloridos">
+                    <img src="https://i.pinimg.com/originals/94/cc/25/94cc254c3e11648b4de8716683f0575d.jpg" alt="Mulher de Madagascar vestindo um tecido estampado e pinturas no rosto">
+                    <img src="https://ts1.mm.bing.net/th?id=OIP.jBYeGO1-cJ6cxG6NnpxD1QHaD1&pid=15.1" alt="Fotografia de integrantes da Hira Gasy troupe">
+                    <img src="https://www.worldatlas.com/r/w1200/upload/1a/57/e4/shutterstock-727682785.jpg" alt="Fotografia mostra uma vendedora em um mercado de Madagascar">
+                    <img src="https://visit-madagascar.com/wp-content/uploads/2025/06/cultural-experiences-you-shouldnt-miss-when-visiting-madagascar-768x439.jpg" alt="Fotografia mostra dois artesãos trabalhando em um telhado colorido">
+                    <img src="https://th.bing.com/th/id/R.a8efec3fa9a3dcbedd89f9ceca9221c0?rik=Ax2nwf8dL3xJ%2fw&riu=http%3a%2f%2fvisit-madagascar.com%2fwp-content%2fuploads%2f2025%2f06%2fdance-in-madagascar-exploring-the-evolution-from-tribal-rituals-to-modern-expressions-2.jpg&ehk=g8N5Y6bXkk8ArTF2TyFk5WpEjyO2WKz3ETTaAJnoAKs%3d&risl=&pid=ImgRaw&r=0" alt="Dançarinos tradicionais da Madagascar ">
+                    <img src="https://viajesviatamundo.com/images/imagenes_viajes/AFRICA/viajes_madagascar/viajes_madagascar_antsirabe_1.jpg" alt="Artista de Madagascar pintando uma cena ao entardecer com árvores de baobá">
+                    <img src="https://i.pinimg.com/736x/3a/e8/f0/3ae8f0f526b6ee21ac75a301960f9830.jpg" alt="Mulher Betsileo vestindo um manto tradicional vermelho">
+                    <img src="https://i.pinimg.com/originals/9d/c0/92/9dc0922a571815c50c7ef1e5da71c3d8.jpg" alt="Príncipe da Valiha segurando um instrumento tradicional madagais de madeira">
+                    <img src="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2024/09/1_6434324-GettyImages-931183644_-_Barbados-1024x576.jpg" alt="Grupo de pessoas caminhando por um caminho de terra">
+                </div>
             </div>
-
-                <button id="botao-esquerdo">::::::</button>
-
-                <button id="botao-direito">>>>></button>
-
-        </section>
-        <!--<section id="cultura-festas">
-            <div class="container-esquerda">
-                <h2>Festivais e Rituais</h2>
-                <h3>Famadihana</h3>
-                <p>Os festivais malgaxes são uma parte essencial da vida cultural. Um dos mais notáveis é o Famadihana, conhecido como a "cerimónia de reviramento dos mortos". Durante este ritual, as famílias exumam os restos mortais dos seus antepassados, limpam os ossos e envolvem-nos em novos sudários antes de os enterrarem novamente. Este evento, que ocorre a cada sete anos, é uma celebração alegre que reforça os laços familiares e honra os antepassados.</p>
-                <h3>Santabary</h3>
-                <p>Outro festival importante é o Santabary, que celebra a primeira colheita de arroz do ano. Este evento é marcado por danças, música e banquetes, simbolizando a prosperidade e a gratidão à terra. O arroz é um alimento central na dieta malgaxe, e este festival destaca a sua importância cultural e económica.</p>
-            </div>
-            <div class="container-direita">
-                <img src="" alt="">
-            </div>
-        </section>
-        <section id="cultura-musicas">
-            <div class="container-esquerda">
-                <img src="" alt="">
-            </div>
-            <div class="container-direita">
-                <h2>Música e Dança</h2>
-                <h3>Música</h3>
-                <p>A música e a dança são fundamentais na cultura malgaxe. A música tradicional de Madagáscar utiliza uma variedade de instrumentos únicos, como o Valiha, uma cítara de bambu, e o Marovany, uma cítara em caixa. A música malgaxe é rica em ritmos e melodias que refletem a diversidade cultural da ilha.</p>
-                <h3>Dança</h3>
-                <p>As danças tradicionais, como o Hira Gasy, combinam música, dança e teatro para contar histórias e transmitir ensinamentos. Este estilo de performance é particularmente popular nas zonas rurais e é uma forma de entretenimento comunitário que também serve para educar e transmitir valores sociais.</p>
-            </div>
-        </section>
+            
+        </section>-->
+        
+        <!-- ******************Festivais e Rituais****************** -->
         <section id="cultura-festas">
-            <div class="container-esquerda">
-                <h2>Tradições Orais</h2>
-                <p>As tradições orais desempenham um papel crucial na preservação da história e cultura de Madagáscar. Os anciãos transmitem histórias, lendas e conhecimentos sobre a natureza e o universo de geração em geração. Estas histórias são frequentemente acompanhadas por música e dança, tornando-as uma experiência rica e envolvente.
-Uma das lendas mais conhecidas é a de Andrianampoinimerina, um dos maiores reis de Madagáscar, que unificou o planalto central no final do século XVIII. As histórias sobre os seus feitos são contadas para inspirar e ensinar valores de liderança e coragem.</p>
-            </div>
-            <div class="container-direita">
-                <img src="" alt="">
+            <h3>Festivais e Rituais</h3>
+            <div class="container-cultura-festas">
+                <div class="container-esquerda texto">
+                    <h4 id="distancia-titulo">Famadihana</h4>
+                    <p>De sete em sete anos, os povos de Madagascar realizam um evento curioso: conhecido como Famadihana, o ritual realizado pela etnia Malgaxe tem como objetivo celebrar laços ancestrais de forma alegre e descontraída.</p>
+                    <p>Durante a festa, túmulos familiares são abertos e os cadáveres, envoltos em panos brancos e em seguida carregados acima das cabeças dos participantes. Animais são sacrificados e a carne é distribuída aos convidados. Em seguida, anciãos explicam às crianças a importância do contato com os mortos.</p>
+                    <p>Segundo a crença Malgaxe, até que o cadáver se decomponha por inteiro e restem apenas ossos, os mortos ainda podem se comunicar com os vivos. Portanto, é essencial que a presença deles seja celebrada com muito amor e alegria.</p>
+                    
+                    <h4>Santabary</h4>
+                    <p>O Festival Santabary é uma antiga celebração tradicional da colheita em Madagascar Isso marca a primeira colheita de arroz do ano e a transição para fora da estação chuvosa. Como o arroz é central para a cultura alimentar e o sustento malgaxe, o festival gira em torno da gratidão pela abundância, do encontro comunitário e da bênção ancestral.</p>
+                    <p>O festival marca um momento de gratidão pela primeira safra de arroz da temporada e celebra um período de abundância agrícola. As tradições variam conforme a região ou o vilarejo, mas costumam incluir oferendas rituais, refeições compartilhadas, bebidas típicas, música e dança. Durante a celebração, o clima é festivo, com áreas rurais e mercados locais ganhando vida enquanto as comunidades se reúnem para comemorar a colheita.</p>
+                </div>
+                <div class="container-direita img">
+                    <img src="https://visit-madagascar.com/wp-content/uploads/2025/06/exploring-the-significance-of-the-malagasy-famadihana-ceremony.jpg" alt="Festival malgaxe Famadihana">
+                    <img src="https://i.pinimg.com/736x/8c/af/6b/8caf6bac66b8675d5c5ddf83d818d050.jpg" alt="Festival malgaxe Famadihana">
+                </div>
             </div>
         </section>
-        <section id="gastronomia">
+        <!-- ******************Música e Dança****************** -->
+        <section id="cultura-musicas">
+            <h3>Música e Dança</h3>
+            <div class="container-cultura-festas">
+                <div class="container-esquerda img">
+                    <img src="https://www.journal-laterrasse.fr/wp-content/uploads/2018/10/HIRAGASY.jpg" alt="dançarinos de Hira Gasy">
+                </div>
+                <div class="container-direita texto">
+                    <h4>Música</h4>
+                    <p>A música e a dança são fundamentais na cultura malgaxe. A música tradicional de Madagáscar utiliza uma variedade de instrumentos únicos, como o Valiha, uma cítara de bambu, e o Marovany, uma cítara em caixa. A música malgaxe é rica em ritmos e melodias que refletem a diversidade cultural da ilha.</p>
+                    <h4>Dança</h4>
+                    <p>As danças tradicionais, como o Hira Gasy, combinam música, dança e teatro para contar histórias e transmitir ensinamentos. Este estilo de performance é particularmente popular nas zonas rurais e é uma forma de entretenimento comunitário que também serve para educar e transmitir valores sociais.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ******************Tradições Orais****************** -->
+        <section id="cultura-tradicoes">
+            <h3>Tradições Orais</h3>
+            <div class="container-cultura-festas">
+                <div class="container-esquerda texto">
+                    <p>As tradições orais desempenham um papel crucial na preservação da história e cultura de Madagáscar. Os anciãos transmitem histórias, lendas e conhecimentos sobre a natureza e o universo de geração em geração. Estas histórias são frequentemente acompanhadas por música e dança, tornando-as uma experiência rica e envolvente.</p>
+                    <p>Uma das lendas mais conhecidas é a de Andrianampoinimerina, um dos maiores reis de Madagáscar, que unificou o planalto central no final do século XVIII. As histórias sobre os seus feitos são contadas para inspirar e ensinar valores de liderança e coragem.</p>
+                </div>
+                <div class="container-direita img">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--<section id="gastronomia">
             <div class="container-introducao">
                 <h2>Gastronomia</h2>
                 <p>A chegada dos árabes à ilha no ano 1.000 não apenas deixou vestígios de sua religião na parte norte do país, que pratica principalmente o Islã, mas também influenciou sua culinária. Outra influência importante na culinária deste país é a indiana, que criou vários pratos malgaxes preparados com curry suave e gengibre.
@@ -129,9 +142,9 @@ Quando os europeus derrotaram a resistência nativa à ilha, os franceses coloni
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
     </main>
-    <!--FOOTER
+    FOOTER
     <footer>
         <div class="container-footer-cima">
             <div class="container-footer-cima-esquerda">
@@ -175,12 +188,12 @@ Quando os europeus derrotaram a resistência nativa à ilha, os franceses coloni
             </div>
         </div>
         <div class="container-footer-baixo">
-            <p>&copy; 2023 Madagáscar. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Madagáscar. Todos os direitos reservados Nathaly Louise Lesczk cunha.</p>
         </div>
         <div class="lemure-quatro-footer">
             <img src="assets/img/lemureEngatinhando.png" alt="lêmure">
         </div>
     </footer>-->
-    <script src="assets/script/script.js"></script>
+    
 </body>
 </html>
