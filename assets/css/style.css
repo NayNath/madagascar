@@ -8,7 +8,7 @@
     padding: 0;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'gameness';
+    font-family: 'gameness', sans-serif;
     letter-spacing: 0.1em;
 }
 h1{
@@ -23,8 +23,9 @@ h3{
 h4{
     font-size: 2rem;
 }
-p{
-    font-family: 'Lexend';
+p, a,li{
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
 }
 body{
     background-color: #310a26;
@@ -33,6 +34,7 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, auto);
 }
+/*-----------------------HEADER----------------------*/
 header{
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -58,17 +60,15 @@ header{
 }
 .menu li, .menu a{
     margin: 0 10px;
-    font-size: 1.1rem;
     text-decoration: none;
     color: #fefefe;
     transition: all 0.3s ease-in-out;
-    font-family: "Montserrat", sans-serif;
 }
 .menu a:hover{
-    color:#f8db7e;
+    color:#fa9f19;
 }
 .botao-mapa:hover{
-    border: 1px solid #f8db7e;
+    border: 1px solid #fa9f19;
 }
 .botao-mapa{
     background-color: #0000007e;
@@ -121,6 +121,7 @@ header{
         display: flex;
     }
 }
+/*-----------------------MAIN----------------------*/
 main{
     grid-column: 1/-1;
     grid-row: 2/3;
@@ -152,7 +153,7 @@ main{
     height: 100vh;
     overflow: hidden; /*corta o que ultrapassa a largura da tela*/
     background: linear-gradient(110deg,         
-    #110012 50%,
+    #310a26 50%,
     #f8db7e 50%,          
     #f8db7e 60%,          
     #ec6349 60%,          
@@ -240,7 +241,7 @@ div.container-imagens.meio{
     #ec6349 100%       ); 
 }
 .container-descobrir-cards{
-    width: 400px;
+    width: 390px;
     height: 350px;
     margin: 10px 5px;
     display: flex;
@@ -251,6 +252,7 @@ div.container-imagens.meio{
 }
 .container-descobrir-cards:hover{
     transform: scale(1.1);
+    z-index: 1;
 }
 .container-card-img{
     width: 100%;
@@ -442,6 +444,195 @@ div.container-imagens.meio{
         width: 0px;
     }
 }
+
+
+/*------------------------------tela cultura e gastronomia------------------------------*/
+/******************banner cultura e gastronomia******************/
+#banner-culturaGastronomia{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../img/historia.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+#banner-culturaGastronomia h1{
+    color: #fefefe;
+    text-shadow: 5px 3px 10px #00000080;
+}
+#cultura-introducao{
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 150px 150px;
+}
+/******************introdução cultura******************/
+#cultura-introducao h2{
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 10px #3a3a3a80;
+}
+/******************fotos cultura******************/
+#cultura-fotos{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:
+    /* Faixas subindo da esquerda para a direita (lado direito - amarelo por cima) */
+    linear-gradient(20deg, #f8db7e 25%, transparent 25%) 0 100%,
+    linear-gradient(20deg, #ec6349 32%, transparent 32%) 0 100%,
+    linear-gradient(20deg, #ce2340 40%, transparent 40%) 0 100%,
+    
+    /* Faixas descendo da esquerda para a direita (lado esquerdo - vermelho por cima) */
+    linear-gradient(-20deg, #ce2340 25%, transparent 25%) 0 100%,
+    linear-gradient(-20deg, #ec6349 32%, transparent 32%) 0 100%,
+    linear-gradient(-20deg, #f8db7e 40%, transparent 40%) 0 100%;
+    
+}
+.carrossel-foto-cultura{
+    overflow: hidden;
+    max-width: 600px;
+}
+.foto-cultura{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    /*width: 500px;
+    height: 550px;
+    margin: 10px;*/
+}
+.foto-cultura img{
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    /*border-radius: 15px;
+    height: 100%;
+    box-shadow: 5px 5px 10px #00000042;*/
+}
+/******************cultura topicos******************/
+
+#cultura-festas,
+#cultura-tradicoes,
+#cultura-musicas{
+    display: flex;
+    flex-direction: column;
+    margin: 150px 80px;
+    padding: 50px 0px;
+    color: #fefefe;
+}
+.container-cultura-festas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-texto{
+    width: 40%;
+    color: #fefefe;
+    margin: 20px 0px 20px 20px;
+}
+#cultura-musicas h3,
+.container-texto h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fefefe;
+}
+.container-moldura{
+    width: 500px;
+    border-top: solid #ce2340 50px;
+    border-left: solid #ce2340 50px;
+    border-bottom: solid #fa9f19 50px;
+    border-right: solid #fa9f19 50px;
+    overflow: hidden;
+}
+.container-trilho{
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 600px;
+    height: 650px;
+}
+.container-trilho img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-texto li {
+    font-size: 1.3rem;
+    list-style: none;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /******************cultura topicos******************/
+    #cultura-festas,
+    #cultura-tradicoes,
+    #cultura-musicas{
+        margin: 100px 20px;
+    }
+    .container-cultura-festas {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-texto{
+        width: 90%;
+    }
+    .container-moldura{
+        width: 300px;
+        border-top: solid #ce2340 20px;
+        border-left: solid #ce2340 20px;
+        border-bottom: solid #fa9f19 20px;
+        border-right: solid #fa9f19 20px;
+    }
+    .container-trilho{
+        width: 600px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 768px){
+    #banner-culturaGastronomia h1{
+        font-size: 5.5rem;
+    }
+    #cultura-introducao{
+        margin: 150px 40px;
+    }
+    /******************cultura topicos******************/
+    #cultura-festas,
+    #cultura-tradicoes,
+    #cultura-musicas{
+        margin: 100px 20px;
+    }
+    .container-cultura-festas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-texto{
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .container-moldura{
+        width: 300px;
+        border-top: solid #ce2340 20px;
+        border-left: solid #ce2340 20px;
+        border-bottom: solid #fa9f19 20px;
+        border-right: solid #fa9f19 20px;
+    }
+    .container-trilho{
+        width: 600px;
+        height: 450px;
+    }
+}
+
+
+
+/*------------------------------footer------------------------------*/
 footer{
     grid-column: 1/-1;
     grid-row: 3/-1;
@@ -478,7 +669,7 @@ footer{
     text-decoration: none;
     color: #c4c4c4;
     font-size: 1.1rem;
-    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in-out;
 }
 .container-footer-listas a:hover{
     color:#fa9f19;
@@ -519,146 +710,4 @@ footer{
         flex-direction: column;
         align-items: start;
     }
-}
-
-/*------------------------------tela cultura e gastronomia------------------------------*/
-/******************banner cultura e gastronomia******************/
-#banner-culturaGastronomia{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url('../img/bannerCultura.png');
-    background-repeat: repeat;
-    background-size: cover;
-    /*background:
-        linear-gradient(160deg, #ce2340 25%, transparent 25%) 0 0,
-        linear-gradient(340deg, #f8db7e 25%, transparent 25%)0,
-        linear-gradient(12deg, #ce2340 25%, transparent 25%) 0 0,
-        linear-gradient(20deg, #ec6349 25%, transparent 25%) 0 0,
-        linear-gradient(100deg, #f8db7e 25%, transparent 20%) 0 0,
-        linear-gradient(-50deg, #ce2340 25%, transparent 25%) 0 0,
-        linear-gradient(-130deg, #ec6349 25%, transparent 25%),
-        linear-gradient(190deg, #f8db7e 25%, transparent 20%) 0 0;*/
-}
-#banner-culturaGastronomia h1{
-    color: #fefefe;
-    text-shadow: 5px 3px 10px #00000080;
-}
-#cultura-introducao{
-    color: #fefefe;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 150px 150px;
-}
-/******************fintrodução cultura e gastronomia******************/
-#cultura-introducao h2{
-    margin-bottom: 10px;
-    text-shadow: 5px 5px 10px #3a3a3a80;
-}
-/******************fotos cultura e gastronomia******************/
-#cultura-fotos{
-    margin-top: 50px;
-    padding: 50px;
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background:
-    /* Faixas subindo da esquerda para a direita (lado direito - amarelo por cima) */
-    linear-gradient(20deg, #f8db7e 25%, transparent 25%) 0 100%,
-    linear-gradient(20deg, #ec6349 32%, transparent 32%) 0 100%,
-    linear-gradient(20deg, #ce2340 40%, transparent 40%) 0 100%,
-    
-    /* Faixas descendo da esquerda para a direita (lado esquerdo - vermelho por cima) */
-    linear-gradient(-20deg, #ce2340 25%, transparent 25%) 0 100%,
-    linear-gradient(-20deg, #ec6349 32%, transparent 32%) 0 100%,
-    linear-gradient(-20deg, #f8db7e 40%, transparent 40%) 0 100%;
-    
-}
-.carrossel-foto-cultura{
-    overflow: hidden;
-    max-width: 600px;
-}
-.foto-cultura{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-    /*width: 500px;
-    height: 550px;
-    margin: 10px;*/
-}
-.foto-cultura img{
-    object-fit: cover;
-    display: block;
-    max-width: 100%;
-    /*border-radius: 15px;
-    height: 100%;
-    box-shadow: 5px 5px 10px #00000042;*/
-}
-/******************fotos cultura e gastronomia******************/
-
-/*cultura festas*/
-#cultura-festas,
-#cultura-tradicoes,
-#cultura-musicas{
-    display: flex;
-    flex-direction: column;
-    margin: 150px 80px;
-    padding: 50px 0px;
-    color: #fefefe;
-}
-.container-cultura-festas {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.texto{
-    width: 50%;
-    color: #fefefe;
-}
-#cultura-musicas h3,
-.texto h4{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: #fefefe;
-}
-.img{
-    width: 40%;
-    height: 650px;
-    border-top: solid #ce2340 50px;
-    border-left: solid #ce2340 50px;
-    border-bottom: solid #fa9f19 50px;
-    border-right: solid #fa9f19 50px;
-
-    display: flex;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-}
-.container-direita img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-@media screen and (max-width: 768px){
-    #banner-culturaGastronomia h1{
-        font-size: 5.5rem;
-    }
-    #cultura-introducao{
-        margin: 150px 40px;
-    }
-    
-    
-}
-p{
-    font-size: 1.3rem;
 }
