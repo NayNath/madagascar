@@ -581,8 +581,9 @@ div.container-imagens.meio{
 }
 .container-gastronomia{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 0 50px;
 }
 .menu-gastronomia{
     background-color: #0000007a;
@@ -602,18 +603,21 @@ div.container-imagens.meio{
 .menu-gastronomia a:hover{
     color: #fa9f19;
 }
+.icone-fechar{
+    display: none;
+}
 .container-pratos-tipicos{
     background-color: #fefefe;
     padding: 50px;
-    margin: 20px;
+    margin: 20px 50px;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 .descricao-pratos-tipicos{
-    width: 40%;
+    width: 50%;
     margin: 20px 0;
 }
 .descricao-pratos-tipicos h3{
@@ -629,7 +633,6 @@ div.container-imagens.meio{
     object-fit: cover;
     border-radius: 15px;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1100px){
     /******************cultura topicos******************/
     #cultura-festas,
@@ -656,7 +659,9 @@ div.container-imagens.meio{
         width: 600px;
         height: 550px;
     }
-
+    .container-gastronomia{
+        margin: 0 0; 
+    }
     .container-pratos-tipicos{
         justify-content: center;
         padding: 50px 20px;
@@ -705,24 +710,42 @@ div.container-imagens.meio{
         height: 450px;
     }
 /******************gastronomia******************/
-    .container-gastronomia {
-        flex-wrap: wrap;
+    .container-gastronomia{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 0 0px;
+        flex-direction: column;
+    }
+    .menu-toggle.gastronommia{
+        margin: 0;
+    }
+    .menu-gastronomia{
+        display: none; 
+        position: absolute;
+        background-color: #020202;
+    }    
+    .menu-gastronomia.fechar{
+        display: none;
+    }
+    .menu-gastronomia.ativoGas{
+        display: flex;
     }
     .menu-gastronomia li, a{
-        margin: 10px;
+        margin: 50px 0px;
     }
-    .menu-gastronomia ol{
+    .icone-fechar{
         display: flex;
-        flex-direction: row;
-        padding: 50px;
+        align-items: center;
+        justify-content: center;
     }
     .container-pratos-tipicos{
         justify-content: center;
         padding: 50px 20px;
-        margin: 50px 20px;
+        margin: 50px 0px;
     }
     .descricao-pratos-tipicos{
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -731,8 +754,8 @@ div.container-imagens.meio{
         margin-bottom: 50px;
     }
     .gastronomia-imagem{
-        width: 450px;
-        height: 300px;
+        width: 300px;
+        height: 290px;
     }
 }
 
@@ -783,8 +806,10 @@ footer{
 .container-footer-baixo{
     color: #fefefe;
     text-align: center;
-    font-size: 1rem;
-    margin: 10px 0px;
+}
+.container-footer-baixo p{
+    font-size: 0.9rem;
+    margin: 10px 5px;
 }
 .container-footer-cima-direita{
     display: flex;
