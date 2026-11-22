@@ -27,9 +27,50 @@ p, a,li{
     font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
 }
+/******************lêmures******************/
+.lemure-sentado{
+    width: 195px;
+    position: relative;
+    bottom: -10px;
+    margin-left: 10px;
+}
+.lemure-quatro{
+    width: 195px;
+    position: absolute;
+    right: 20px;
+    bottom: -1.5%; 
+}
+.lemure-quatro-footer{
+    width: 195px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.dois-lemures{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+}
+.dois-lemures img{
+    margin: 0 10px;  
+}
+.lêmure-pulando{
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 1;
+}
+.lêmure-pulando img,
+.lemure-quatro img,
+.lemure-quatro-footer img,
+.lemure-sentado img,
+.dois-lemures img{
+    width: 100%;
+}
 body{
-    background-color: #310a26;
-    /*background-color: #110012;*/
+    background-color: #110012;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -153,7 +194,7 @@ main{
     height: 100vh;
     overflow: hidden; /*corta o que ultrapassa a largura da tela*/
     background: linear-gradient(110deg,         
-    #310a26 50%,
+    #110012 50%,
     #f8db7e 50%,          
     #f8db7e 60%,          
     #ec6349 60%,          
@@ -288,30 +329,6 @@ div.container-imagens.meio{
     font-weight: bold;
     background-color: #fefefe;
 }
-/******************lêmures******************/
-.lemure-sentado{
-    width: 195px;
-    position: relative;
-    bottom: -10px;
-    margin-left: 10px;
-}
-.lemure-quatro{
-    width: 195px;
-    position: absolute;
-    right: 20px;
-    bottom: -1.5%; 
-}
-.lemure-quatro-footer{
-    width: 195px;
-    position: absolute;
-    right: 20px;
-}
-.lemure-quatro img,
-.lemure-quatro-footer img,
-.lemure-sentado img{
-    width: 100%;
-}
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
      #venha-conhecer{
         flex-direction: column;
@@ -343,6 +360,9 @@ div.container-imagens.meio{
     }
     .container-conhecer-direita p{
         font-size: 1.1rem;
+    }
+    .lemure-quatro-footer{
+        width: 130px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -444,8 +464,6 @@ div.container-imagens.meio{
         width: 0px;
     }
 }
-
-
 /*------------------------------tela cultura e gastronomia------------------------------*/
 /******************banner cultura e gastronomia******************/
 #banner-culturaGastronomia{
@@ -454,7 +472,7 @@ div.container-imagens.meio{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('../img/historia.png');
+    background-image: url('../img/bannerCultura.png');
     background-repeat: repeat;
     background-size: cover;
 }
@@ -527,6 +545,7 @@ div.container-imagens.meio{
     margin: 150px 80px;
     padding: 50px 0px;
     color: #fefefe;
+    position: relative;
 }
 .container-cultura-festas {
     display: flex;
@@ -568,7 +587,6 @@ div.container-imagens.meio{
     font-size: 1.3rem;
     list-style: none;
 }
-
 /******************gastronomia pratos******************/
 #gastronomia{
     background: linear-gradient(220deg, 
@@ -578,6 +596,7 @@ div.container-imagens.meio{
     #ce2340 50%);
     padding: 10px;
     margin-bottom: 150px;
+    position: relative;
 }
 .container-gastronomia{
     display: flex;
@@ -673,6 +692,7 @@ div.container-imagens.meio{
         flex-direction: column;
         text-align: center;
     }
+
 }
 @media screen and (max-width: 768px){
     #banner-culturaGastronomia h1{
@@ -758,15 +778,14 @@ div.container-imagens.meio{
         height: 290px;
     }
 }
-
-
-
 /*------------------------------footer------------------------------*/
 footer{
     grid-column: 1/-1;
     grid-row: 3/-1;
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding: 20px 0;
 }
 .container-footer-cima{
     display: flex;
@@ -823,7 +842,6 @@ footer{
     width: 35px;
     margin: 10px 4px
 }
-
 @media screen and (max-width: 768px) {
     .container-footer-cima{
         display: flex;
