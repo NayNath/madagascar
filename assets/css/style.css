@@ -462,6 +462,8 @@ div.container-imagens.meio{
     color: #fefefe;
     text-shadow: 5px 3px 10px #00000080;
 }
+/******************introdução cultura/ introdução gastronomia******************/
+#gastronomia-introducao,
 #cultura-introducao{
     color: #fefefe;
     display: flex;
@@ -471,7 +473,7 @@ div.container-imagens.meio{
     flex-direction: column;
     margin: 150px 150px;
 }
-/******************introdução cultura******************/
+#gastronomia-introducao h2,
 #cultura-introducao h2{
     margin-bottom: 10px;
     text-shadow: 5px 5px 10px #3a3a3a80;
@@ -517,7 +519,6 @@ div.container-imagens.meio{
     box-shadow: 5px 5px 10px #00000042;*/
 }
 /******************cultura topicos******************/
-
 #cultura-festas,
 #cultura-tradicoes,
 #cultura-musicas{
@@ -567,7 +568,69 @@ div.container-imagens.meio{
     font-size: 1.3rem;
     list-style: none;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
+
+/******************gastronomia pratos******************/
+#gastronomia{
+    background: linear-gradient(220deg, 
+    #f8db7e 30%,
+    #ec6349 30%,
+    #ec6349 50%,
+    #ce2340 50%);
+    padding: 10px;
+    margin-bottom: 150px;
+}
+.container-gastronomia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-gastronomia{
+    background-color: #0000007a;
+    padding: 20px;
+    list-style: none;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+}
+.menu-gastronomia li, a{
+    margin: 41px 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fefefe;
+    transition: all 0.5s ease-in-out;
+}
+.menu-gastronomia a:hover{
+    color: #fa9f19;
+}
+.container-pratos-tipicos{
+    background-color: #fefefe;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.descricao-pratos-tipicos{
+    width: 40%;
+    margin: 20px 0;
+}
+.descricao-pratos-tipicos h3{
+    margin-bottom: 50px;
+}
+.gastronomia-imagem{
+    width: 450px;
+    height: 500px;
+}
+.gastronomia-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
     /******************cultura topicos******************/
     #cultura-festas,
     #cultura-tradicoes,
@@ -583,7 +646,7 @@ div.container-imagens.meio{
         width: 90%;
     }
     .container-moldura{
-        width: 300px;
+        width: 400px;
         border-top: solid #ce2340 20px;
         border-left: solid #ce2340 20px;
         border-bottom: solid #fa9f19 20px;
@@ -591,13 +654,26 @@ div.container-imagens.meio{
     }
     .container-trilho{
         width: 600px;
-        height: 450px;
+        height: 550px;
+    }
+
+    .container-pratos-tipicos{
+        justify-content: center;
+        padding: 50px 20px;
+        margin: 50px 20px;
+    }
+    .descricao-pratos-tipicos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
 @media screen and (max-width: 768px){
     #banner-culturaGastronomia h1{
         font-size: 5.5rem;
     }
+    #gastronomia-introducao,
     #cultura-introducao{
         margin: 150px 40px;
     }
@@ -625,8 +701,38 @@ div.container-imagens.meio{
         border-right: solid #fa9f19 20px;
     }
     .container-trilho{
-        width: 600px;
+        width: 500px;
         height: 450px;
+    }
+/******************gastronomia******************/
+    .container-gastronomia {
+        flex-wrap: wrap;
+    }
+    .menu-gastronomia li, a{
+        margin: 10px;
+    }
+    .menu-gastronomia ol{
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+    }
+    .container-pratos-tipicos{
+        justify-content: center;
+        padding: 50px 20px;
+        margin: 50px 20px;
+    }
+    .descricao-pratos-tipicos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .descricao-pratos-tipicos h3{
+        margin-bottom: 50px;
+    }
+    .gastronomia-imagem{
+        width: 450px;
+        height: 300px;
     }
 }
 
